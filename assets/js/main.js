@@ -19,7 +19,7 @@
 		
 		$('.floating-share a').click(function (event){
 			event.preventDefault();
-			var share_url = 'http://www.google.com',
+			var share_url = document.location,
 				windowName = "popUp",
 				windowSize = "width=500,height=200,resizable=0,scrollbars=0",
 				url = '';
