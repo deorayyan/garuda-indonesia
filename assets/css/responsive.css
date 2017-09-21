@@ -1,0 +1,175 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Medium devices*/
+@media (max-width: 1199px) {
+}
+
+/* Small devices */
+@media (max-width: 991px) {
+	.promo-boxes-container,
+	.slider {
+		width: 100%;
+	}
+	.slider-content {
+		top: 100px;
+		transform: scale(1.2);
+	}
+	.flex-active-slide .slider-content {
+		top: 100px;
+		bottom: auto;
+		transform: scale(1);
+	}
+	.slider-content .title {
+		font-size: 55px;
+	}
+	.slider-background img {
+		width: 100%;
+		min-height: inherit;
+	}
+	.slider-footer .footer-item {
+		width: 50%;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	.slider-footer .footer-item:last-child {
+		width: 100%;
+	}
+	.youtube-button {
+		margin-top: 20px;
+	}
+}
+
+/* Extra small devices */
+@media (max-width: 767px) {
+	.main-menu {
+		height: auto;
+	}
+	.logo,
+	.offers-menu {
+		width: 100%;
+		text-align: center;
+	}
+	.logo {
+		text-align: left;
+	}
+	.logo img {
+		max-width: 120px;
+	}
+	.offers-menu {
+		line-height: 20px;
+		padding: 10px 0;
+		border-top: 2px solid rgba(0,0,0,.2);
+	}
+	
+	.slider-footer .footer-item {
+		width: 100%;
+		margin: 0;
+		margin-bottom: 20px;
+	}
+	
+	.slider-footer-toggler {
+		display: block;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		height: 30px;
+		line-height: 30px;
+		background: #FFFFFF;
+		text-align: center;
+		color: #0064a0;
+	}
+	.slider-footer-toggler:hover {
+		background: #0064a0;
+		color: #FFFFFF;
+	}
+	.slider-footer-toggler:before {
+		content: "\f077";
+		font-family: FontAwesome;
+	}
+	.slider-footer {
+		padding: 45px 35px 20px;
+		background: rgba(255,255,255,.9);
+		color: #111;
+		top: calc(100% - 30px);
+		transition: all 500ms;
+	}
+	.slider-footer.toggle {
+		top: 0;
+		overflow-y: auto;
+	}
+	.slider-footer.toggle .slider-footer-toggler:before {
+		content: "\f078";
+	}
+	.button-slider {
+		border-color: #333;
+		color: #333;
+		margin: 0;
+		padding: 0 20px;
+		letter-spacing: 2px;
+	}
+	.slider-content .title {
+		font-size: 35px;
+	}
+	.slider-content .tagline, .slider-content .top-tagline {
+		font-size: 12px;
+		letter-spacing: 2px;
+	}
+	.slider-content .arc {
+		font-size: 12px;
+	}
+	.slider-content {
+		padding-top: 45px;
+	}
+	.youtube-button {
+		height: 30px;
+		line-height: 26px;
+		font-size: 14px;
+		padding: 0 8px 0 15px;
+		margin-top: 10px;
+	}
+	.nav-toggler,
+	.nav-close {
+		display: inline-block;
+	}
+	.main-nav {
+		visibility: hidden;
+		opacity: 0;
+		position: fixed;
+		background: rgba(0,0,0,.9);
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 10;
+		padding-top: 100px;
+		transition: all 500ms;
+	}
+	.main-nav.toggle {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+/* Extra Extra small decixes */
+@media (max-width: 640px) {
+	.slider-content {
+		top: 50px;
+	}
+	.flex-active-slide .slider-content {
+		top: 50px;
+	}
+	.slider-content {
+		padding-top: 35px;
+	}
+	.youtube-button {
+		height: 20px;
+		line-height: 16px;
+		font-size: 12px;
+		padding: 0 5px 0 12px;
+		margin-top: 5px;
+		border-radius: 5px 0 5px 0;
+	}
+}
